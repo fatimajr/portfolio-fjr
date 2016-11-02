@@ -1,0 +1,486 @@
+html{
+	overflow-x: hidden
+}
+body{
+    background-color: transparent;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Questrial', sans-serif;
+}
+.font-s1{
+    font-size: 1.2rem;
+}
+.header{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.social-net{
+	font-size: 2rem;
+	position: fixed;
+    width: 50px;
+    height: auto;
+    top: 35%;
+    z-index: 4;
+    left: 92.7%;
+    text-align: center;
+    background-color: rgba(255, 250, 255, 0.2);
+ /*   box-shadow: 0 20px 40px rgba(0,0,0,.2);*/
+}
+
+.menubar{
+    font-size: 2rem;
+    position: fixed;
+    left: 92.5%;
+    z-index: 302;
+    top: 10%;
+    background-color: rgba(255, 250, 255, 0.2);
+    padding: 1%;
+}
+
+.open{
+	visibility: visible;
+	transform: scale(1.2,1.2);
+}
+
+.close{
+	visibility: hidden;
+}
+
+.nav-list{
+    font-size: 5rem;
+    text-align: center;
+    font-family: "albertoregular";
+    top: 6vh;
+    position: relative;
+}
+
+a.line{
+    color:  rgba(21, 255, 255, 1); !important;
+}
+
+a.line:hover{
+    text-decoration: line-through;
+}
+
+div#open{
+    background-color: rgba(0, 0, 7, 0.9);
+    position: fixed;
+    z-index: 300;
+    box-shadow: 0 20px 40px rgba(0,0,0,.1);
+    transition: all .3s;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.heroImage{
+    /*width: 1250px;*/
+    height: 450px;
+    position: relative;
+    background: #7aedfe;
+    z-index: 1;
+    padding: 2% 5%;
+    box-shadow: 0 20px 40px rgba(0,0,0,.2);
+    right: 15vh;
+}
+
+.heroImage div{
+    position: absolute;
+}
+
+.skills {
+    left: 20%;
+    bottom: 25%;
+    position: absolute;
+}
+
+.work {
+    left: 40%;
+    top: 20%;
+}
+
+.bubble{
+    left: 62%;
+    top: 15%;
+}
+
+.contact{
+    bottom: 20%;
+    left: 45%;
+}
+
+.bubble img{
+	width: 55%;
+}
+
+.contact img{
+	width: 45%;
+}
+
+.who img, .skills img, .work img{
+	width: 35%;
+}
+
+.brand{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.brand img{
+	width: 300px;
+    height: 90px;
+    z-index: 3;
+    position: relative;
+}
+
+/*WHO? - ABOUT ME*/
+
+.aboutme{
+    background-image: url(../img/contact2.jpg);
+    background-attachment: fixed; 
+    box-shadow: 0 20px 40px rgba(0,0,0,.2);
+    background-size: cover;
+    position: relative;
+    top: 18vh; 
+}
+
+.parrafo{
+    color: white;
+    background-color: rgba(9, 0, 0, 0.2);
+    padding: 6% 6% 2% 6%;
+}
+
+.faPhoto {
+    background-image: url(../img/foto-who3.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 461px;
+    background-repeat: no-repeat;
+}
+
+.letras {
+    font-size: 3.5rem;
+    font-family: 'albertoregular';
+    color: white;
+}
+
+.social-net a{
+    color: black !important ;
+}
+
+/*SKILLS SECTION*/
+
+.icon1{
+    position: relative;
+    bottom: 240px;
+    width: 70%;
+    left: 370px;
+}
+
+.skills-section{
+    position: relative;
+    top: 30vh;
+}
+
+.section1{
+    width: 80%;
+    background: #7aedfe;
+    box-shadow: 0 20px 40px rgba(0,0,0,.1);   
+    padding: 2%;
+}
+
+.icongif{
+    width: 35%;
+    margin-left: 30%;
+}
+
+.iconpng{
+    width: 17%;
+     margin-top: 10%; 
+    margin-bottom: 5%;
+    margin-left: 30%;
+}
+.skill1{
+    box-shadow: 0 20px 40px rgba(0,0,0,.2);
+    padding: 8%;
+    position: relative;
+    background: #7aedfe;
+}
+
+.tool-icon{
+    width: 80px;
+}
+
+.tools{
+    box-shadow: 0 20px 40px rgba(0,0,0,.2);
+    padding: 3%;
+    text-align: right;
+    border: solid 4px;
+    position: relative;
+    right: 30%;
+}
+.titulo{
+    width: 100%;
+    padding: 3%;
+    position: relative;
+    top: 30vh;
+    left: -2vh;
+    border: solid 5px;
+}
+
+.titulo-work{
+    width: 100%;
+    padding: 2.2%;
+    position: relative;
+    top: 40vh;
+    left: -2vh;
+    border: solid 5px;
+}
+
+.tool-js{
+    width: 70px;
+}
+
+.hidden{
+    opacity:0;
+}
+
+.visible{
+    opacity:1;
+}
+
+.portfolio{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    top: 40vh;
+}
+
+.works{
+    padding: 0px !important;
+    position: relative;
+    width:100%;  
+} 
+
+.portfolio div.row{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+/*MOSTRAR ICONOS - HOVER*/
+#show-hover .text-icons{
+    position: absolute;
+    top: 29vh;
+    left: 0;
+    visibility: hidden;
+    font-size: 1.8rem;
+   /* font-family: "albertoregular";*/
+    width: 100%;
+    color: white;
+    z-index: 10;
+    margin: auto;
+    text-align: center;
+    -webkit-transform: translateY(70px);
+    -moz-transform: translateY(70px);
+}
+#show-hover:hover .text-icons {
+    visibility:visible;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transition-property: transform;
+    transition: all .5s ease;
+}
+/*FIN MOSTRAR ICONOS - HOVER*/
+
+/*MOSTRAR TEXTO - HOVER*/
+#show-hover .text {
+    position: absolute;
+    bottom: 22vh;
+    left: 0;
+    visibility: hidden;
+    font-size: 1.7rem;
+    width: 100%;
+    color: white;
+    z-index: 10;
+    margin: auto;
+    text-align: center;
+    -webkit-transform: translateY(70px);
+    -moz-transform: translateY(70px);
+}
+
+#show-hover:hover .text {
+    visibility:visible;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transition-property: transform;
+    transition: all .5s ease;
+}
+/*FIN MOSTRAR TEXTO-HOVER*/
+
+.works div{
+    width: 100%;
+    vertical-align: top;
+    background-size: cover;
+    height: 280px;
+    background-repeat: no-repeat;
+}
+/*OSCURECER FONDO-HOVER*/
+.works:after {
+    content:'\A';
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.works:hover:after {
+    opacity:0.8;
+}
+/*FIN OSCURECER FONDO-HOVER*/
+
+.julliard{
+     background-image: url(../img/julliard.jpg);
+     background-position-x: 30%;
+}
+
+.portafolio{
+     background-image: url(../img/portafolio.jpg);
+     background-position-x: 50%;
+}
+
+.user-testing{
+     background-image: url(../img/user-testing.jpg);
+     background-position-x: 50%;
+}
+
+.twitter{
+     background-image: url(../img/twitter.jpg);
+     background-position-x: 30%;
+     cursor: pointer;
+}
+
+.trello{
+     background-image: url(../img/trello.jpg);
+}
+
+.lyft{
+     background-image: url(../img/lyft.jpg);
+     background-position-x: 50%;
+}
+
+.v-magazine{
+     background-image: url(../img/v-magazine.jpg);
+     background-position-y: 45%;
+}
+
+.book-cover{
+     background-image: url(../img/book-cover.jpg);
+}
+
+.powertrekk{
+     background-image: url(../img/powertrekk.jpg);
+}
+ 
+
+.contacto{
+    background-image: url(../img/contact5.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: 15vh;
+    width: 100%;
+    position: relative;
+    height: 70vh;
+    top: 40vh;
+   /* border-bottom: solid #2E2E2E 5px;*/
+}
+.icon2{
+    font-size: 1.5rem;
+}
+.text-contact{
+    background: white;
+    position: relative;
+    top: 50px;
+    left: 3%;
+    padding: 4%;
+    border: solid #2E2E2E 5px;
+    box-shadow: 0 20px 40px rgba(0,0,0,.2);
+    color: #2E2E2E;
+}
+.contacto p{
+    padding-right: 100px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(33,33,33,0.3); 
+    border-radius: 10px;
+    background-color: white;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background-color: #7aedfe;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); 
+}
+
+.education{
+/*    top: 12vh; 
+*/  left: 22vh;
+    position: relative;
+}
+.education div div{
+    background-size: contain;
+    height: 15vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}  
+
+.cibertec{
+    background-image: url(../img/cibertec.png);
+    font-size: 2rem;
+}
+
+.laboratoria{
+    background-image: url(../img/laboratoria.png);
+}
+
+.bpro{
+    background-image: url(../img/bpro.png);
+    width: 80%;
+    left: 3vh;
+}
+.ecce{
+    background-image: url(../img/ECCE-1.png);
+    width: 150%;
+}
+.albertoFont{
+    font-size: 2rem;
+    font-family: "albertoregular";
+}
+
+.footer{
+    position: relative;
+    top: 39vh;
+    color: #01DFD7;
+    font-size: 1.2rem;
+    left: 2vh;
+    height: 5vh;
+}
+
+.titulo-education{
+    text-align: left;
+    position: relative;
+    /*top: 12vh;*/
+    color: #585858;
+    font-size: 2.2rem;
+    padding-bottom: 2%;
+    color: #01DFD7;
+}
