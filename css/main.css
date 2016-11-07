@@ -8,7 +8,7 @@ body{
     font-family: 'Questrial', sans-serif;
 }
 .font-s1{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 .header{
     padding-top: 1%;
@@ -80,8 +80,9 @@ div#open{
     background: #7aedfe;
     z-index: 1;
     padding: 2% 5%;
-    box-shadow: 0 20px 40px rgba(0,0,0,.2);
+    box-shadow: 0 20px 40px rgba(0,0,0,.1);
     right: 10vh;
+    top: 3vh;
 }
 
 .heroImage div{
@@ -133,38 +134,19 @@ div#open{
 
 /*WHO? - ABOUT ME*/
 
-.aboutme{
-    background-image: url(../img/contact2.jpg);
-    background-attachment: fixed; 
-    box-shadow: 0 20px 40px rgba(0,0,0,.2);
-    background-size: cover;
-    position: relative;
-    top: 18vh; 
-}
-
-.parrafo{
-    color: white;
-    background-color: rgba(9, 0, 0, 0.2);
-    padding: 6% 6% 2% 6%;
-}
-
-.faPhoto {
-    background-image: url(../img/foto-who3.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 461px;
-    background-repeat: no-repeat;
-}
-
 .letras {
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-family: 'albertoregular';
-    color: white;
+    color: #13181C;
+    position: relative;
+    top: -2vh;
 }
 
 .social-net a{
-    color: black !important ;
+    color: #1c1b23 !important ;
+}
+.menubar span{
+    color:#1c1b23;
 }
 
 /*SKILLS SECTION*/
@@ -200,7 +182,7 @@ div#open{
     margin-left: 30%;
 }
 .skill1{
-    box-shadow: 0 20px 40px rgba(0,0,0,.2);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
     padding: 8%;
     position: relative;
     background: #7aedfe;
@@ -211,10 +193,8 @@ div#open{
 }
 
 .tools{
-    box-shadow: 0 20px 40px rgba(0,0,0,.2);
     padding: 3%;
     text-align: right;
-    border: solid 4px;
     position: relative;
     right: 30%;
 }
@@ -223,15 +203,6 @@ div#open{
     padding: 3%;
     position: relative;
     top: 30vh;
-    left: -2vh;
-    border: solid 5px;
-}
-
-.titulo-work{
-    width: 100%;
-    padding: 2.2%;
-    position: relative;
-    top: 40vh;
     left: -2vh;
     border: solid 5px;
 }
@@ -391,7 +362,7 @@ div#open{
     width: 100%;
     position: relative;
     height: 70vh;
-    top: 40vh;
+    top: 27vh;
 }
 .icon2{
     font-size: 1.5rem;
@@ -402,12 +373,18 @@ div#open{
     top: 40px;
     left: 3%;
     padding: 4%;
-    border: solid #2E2E2E 5px;
-    box-shadow: 0 20px 40px rgba(0,0,0,.2);
-    color: #2E2E2E;
+    border: solid #3e3e3e 5px;
+    box-shadow: 0 20px 40px rgba(0,0,0,.1);
+    color: #3e3e3e;
 }
 .contacto p{
     padding-right: 100px;
+}
+.habilidades-section h5{
+    color: rgba(110, 68, 108, 0.8);
+}
+.habilidades-section p{
+    color: #3e3e3e;
 }
 
 ::-webkit-scrollbar {
@@ -453,24 +430,321 @@ div#open{
     width: 150%;
 }
 .albertoFont{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "albertoregular";
 }
 
 .footer{
     position: relative;
-    top: 39vh;
+    top: 25vh;
     color: #01DFD7;
     font-size: 1.2rem;
     height: 5vh;
     background: white;
 }
 
-.titulo-education{
+.titulo-skills, .titulo-work, .titulo-education{
     text-align: left;
     position: relative;
-    color: #585858;
     font-size: 2.2rem;
     padding-bottom: 2%;
     color: #01DFD7;
+}
+.titulo-tools{
+    text-align: left;
+    font-size: 2.2rem;
+    color: #01DFD7;
+    padding-bottom: 2%;
+}
+
+.tools-section{
+    position: relative;
+    top: 5vh;
+    height: 65vh;
+}
+.ai, .ps, .id{
+    height: 11vh;
+    background-repeat: no-repeat;
+}
+.ai{
+    background-image: url(../img/ai1.png); 
+}
+
+.ps{
+    background-image: url(../img/ps1.png);
+}
+
+.id{
+    background-image: url(../img/id1.png);
+}
+
+.content {
+    width: 100%;
+    float: left;
+    font-size: 1.1rem;
+    line-height: 2em;
+    color: rgba(110, 68, 108, 0.8);;
+}
+
+.col {
+    width: 280px;
+}
+
+#skill {
+    list-style: none;
+    padding-top: 30px;
+}
+
+#skill li {
+    margin-bottom: 70px;
+    background: white;
+    height: 5px;
+    width: 90%;
+    border-radius: 3px;
+}
+
+#skill li  {
+    position: relative;
+    top: -30px;
+}
+
+.expand {
+    height: .5vh;
+    background: #01DFD7;
+    position: absolute;
+    box-shadow: 0px 0px 10px 1px rgba(0,198,255,0.4);
+}
+
+.html5 {
+    width: 90%;
+    -moz-animation: html5 2s ease-out;
+    -webkit-animation: html5 2s ease-out;
+}
+
+.css3 {
+    width: 80%;
+    -moz-animation: css3 2s ease-out;
+    -webkit-animation: css3 2s ease-out;
+}
+
+.js {
+    width: 40%;
+    -moz-animation: js 2s ease-out;
+    -webkit-animation: js 2s ease-out;
+}
+
+.jq {
+    width: 40%;
+    -moz-animation: jq 2s ease-out;
+    -webkit-animation: jq 2s ease-out;
+}
+
+.bootstrap {
+    width: 70%;
+    -moz-animation: bootstrap 2s ease-out;
+    -webkit-animation: bootstrap 2s ease-out;
+}
+
+.photoshop {
+    width: 80%;
+    -moz-animation: photoshop 2s ease-out;
+    -webkit-animation: photoshop 2s ease-out;
+}
+
+.illustrator {
+    width: 80%;
+    -moz-animation: photoshop 2s ease-out;
+    -webkit-animation: photoshop 2s ease-out;
+}
+.indesign {
+    width: 80%;
+    -moz-animation: photoshop 2s ease-out;
+    -webkit-animation: photoshop 2s ease-out;
+}
+
+
+
+@-moz-keyframes html5 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    };
+}
+
+@-moz-keyframes css3 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    };
+}
+
+@-moz-keyframes js {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 40%;
+    };
+}
+
+@-moz-keyframes jq {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 40%;
+    };
+}
+
+@-moz-keyframes bootstrap {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 70%;
+    };
+}
+
+@-moz-keyframes photoshop {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    };
+}
+
+@-moz-keyframes illustrator {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    };
+}
+
+@-moz-keyframes indesign {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    };
+}
+
+@-webkit-keyframes html5 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    };
+}
+
+@-webkit-keyframes css3 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    };
+}
+
+@-webkit-keyframes js {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 40%;
+    };
+}
+
+@-webkit-keyframes jq {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 40%;
+    };
+}
+
+@-webkit-keyframes bootstrap {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 70%;
+    };
+}
+
+@-webkit-keyframes photoshop {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    };
+}
+
+@-webkit-keyframes illustrator {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    };
+}
+
+@-webkit-keyframes indesign {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    };
+}
+
+.about{
+    position: relative;
+    top: 15vh; 
+    background-image: url(../img/about4.jpg);
+    background-size: cover;
+    background-position-y: -15vh;
+    height: 88vh;
+    border: solid #7aedfe 1vh;
+    overflow: hidden;
+}
+
+.texto-about{
+    color: white;
+    padding: 6vh;
+    background: rgba(0,0,0,0.3);
+    box-shadow: 0 20px 40px rgba(0,0,0,.2);
+}
+.color-1{
+/*    color: #01DFD7;*/
+    color: #7aedfe;
+}
+.color-2{
+    color: rgba(110, 68, 108, 0.8);
 }
