@@ -1,12 +1,11 @@
 html{
-	overflow-x: hidden
+	overflow-x: hidden;   
+    
 }
 body{
-    background-color: transparent;
-    background-attachment: fixed;
-    background-size: cover;
     font-family: 'Questrial', sans-serif;
 }
+
 .font-s1{
     font-size: 1.5rem;
 }
@@ -19,10 +18,10 @@ body{
 	font-size: 2rem;
 	position: fixed;
     width: 50px;
-    height: auto;
-    top: 35%;
+    /*height: auto;*/
+   /* top: 35%;*/
     z-index: 4;
-    left: 92.7%;
+   /* left: 92.7%;*/
     text-align: center;
     background-color: rgba(255, 250, 255, 0.2);
 }
@@ -30,9 +29,8 @@ body{
 .menubar{
     font-size: 2rem;
     position: fixed;
-    left: 92.5%;
+    right: 2vh;
     z-index: 302;
-    top: 10%;
     background-color: rgba(255, 250, 255, 0.2);
     padding: 1%;
 }
@@ -74,52 +72,40 @@ div#open{
 }
 
 .heroImage{
-    width: 1250px;
-    height: 450px;
-    position: relative;
+   /* width: 1250px;
+    height: 450px;*/
+    /*position: relative;*/
     background: #7aedfe;
     z-index: 1;
-    padding: 2% 5%;
+  /*  padding: 2% 5%;*/
     box-shadow: 0 20px 40px rgba(0,0,0,.1);
-    right: 10vh;
-    top: 3vh;
+    /*right: 10vh;
+    top: 3vh;*/
 }
 
-.heroImage div{
-    position: absolute;
+
+.heroImage div img{
+    width: 50vh;
+    position: relative;
+    padding-top: 4vh;
 }
 
-.skills {
-    left: 20%;
-    bottom: 25%;
-    position: absolute;
+.who img{
+    /* top: 8vh; */
+    left: -3vh;
+    width: 55vh !important;
 }
 
-.work {
-    left: 40%;
-    top: 20%;
+.work img{
+    width: 43vh !important;
 }
 
-.bubble{
-    left: 62%;
-    top: 15%;
-}
-
-.contact{
-    bottom: 20%;
-    left: 45%;
-}
-
-.bubble img{
-	width: 55%;
+.skills img{
+    bottom: 12vh;
 }
 
 .contact img{
-	width: 45%;
-}
-
-.who img, .skills img, .work img{
-	width: 35%;
+    bottom: 15vh;
 }
 
 .brand{
@@ -128,7 +114,6 @@ div#open{
 }
 .brand img{
     z-index: 3;
-    position: relative;
     height: 16vh;
 }
 
@@ -403,13 +388,13 @@ div#open{
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2); 
 }
 
-.education div div{
+/*.education div div{
     background-size: contain;
     height: 15vh;
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
-}  
+}  */
 
 .cibertec{
     background-image: url(../img/cibertec.png);
@@ -433,7 +418,7 @@ div#open{
     font-size: 1.5rem;
     font-family: "albertoregular";
 }
-
+/*
 .footer{
     position: relative;
     top: 25vh;
@@ -441,9 +426,9 @@ div#open{
     font-size: 1.2rem;
     height: 5vh;
     background: white;
-}
+}*/
 
-.titulo-skills, .titulo-work, .titulo-education{
+.titulo-skills, .titulo-work/*, .titulo-education*/{
     text-align: left;
     position: relative;
     font-size: 2.2rem;
@@ -729,8 +714,6 @@ div#open{
     top: 15vh; 
     background-image: url(../img/about4.jpg);
     background-size: cover;
-    background-position-y: -15vh;
-    height: 88vh;
     border: solid #7aedfe 1vh;
     overflow: hidden;
 }
